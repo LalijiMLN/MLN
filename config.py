@@ -27,9 +27,9 @@ API_HASH = environ.get("API_HASH", "88cf2c17c7a2bd21f4204c89c648dd40")
 ADMINS = int(environ.get("ADMINS", "1557042262"))
 
 # Database Information
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://RAS_TEAM:rasteam@123@cluster0.619qk8h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://yadavharry401:xalD3aQwIZwmlanM@cluster0.rbc7lll.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
-DB_URI = environ.get("DB_URI", "mongodb+srv://yadavrahul2003:IbRdr2y3Qs5juADm@cluster0.8epud6d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = environ.get("DB_URI", "mongodb+srv://hy6962548:21bJdc6UDqqXAWy3@cluster0.lsei9am.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = environ.get("DB_NAME", "vjbotz")
 
 
@@ -43,7 +43,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "10")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "600")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001923834324"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002055918522"))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002128363054')).split()]
 
 # Don't Remove Credit Tg - @VJ_Botz
@@ -66,7 +66,7 @@ class Var(object):
     name = str(getenv('name', 'filetolinkvjbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '3'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002141038542'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002003233324'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
@@ -81,9 +81,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://ras-file-store-bot.onrender.com"
+        URL = ""
     else:
-        URL = "https://ras-file-store-bot.onrender.com"
+        URL = ""
 
 
 
