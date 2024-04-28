@@ -24,7 +24,7 @@ def is_enabled(value, default):
 # Owner Information
 API_ID = int(environ.get("API_ID", "25848289"))
 API_HASH = environ.get("API_HASH", "88cf2c17c7a2bd21f4204c89c648dd40")
-ADMINS = int(environ.get("ADMINS", '1557042262 6482751939 6153802459'))
+ADMINS = int(environ.get("ADMINS", "1557042262"))
 
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://RAS_TEAM:rasteam@123@cluster0.619qk8h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
