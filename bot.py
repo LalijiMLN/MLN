@@ -57,7 +57,7 @@ loop = asyncio.get_event_loop()
 
 async def start():
     print('\n')
-    print('Initalizing Tech HEro Bot')
+    print('Initalizing Tech RAS Bot')
     bot_info = await StreamBot.get_me()
     StreamBot.username = bot_info.username
     await initialize_clients()
@@ -85,7 +85,7 @@ async def start():
     bind_address = "0.0.0.0"
     await web.TCPSite(app, bind_address, Var.PORT).start()
     await restart_bots()
-    print("Bot Started Powered By @VJ_Botz")
+    print("Bot Started Powered By @RS_Movie")
     await idle()
 
 
